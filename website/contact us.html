@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+    <head>   
+        <title>Contact</title>
+        <link rel="stylesheet" href = "styler.css" />
+    </head>
+
+    <header>
+        <h1>Have a Query for us?</h1>
+    </header>
+
+    <body> 
+      <nav>
+            <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "tours.html"> Tours</a></li>
+                <li><a href = "Gallery.html"> Gallery</a></li>
+                <li><a href = "about us.html">About</a></li>
+                <li><a href = "contact us.html">Contact</a></li>
+            </ul>    
+      </nav>
+
+        <div class="contact-section">
+
+            <!--Contact form-->
+            <div class="contact">
+                <div class="contact-box">
+                <h2>Send us a message</h2>
+                <form action="form-handler.php" method="post">
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required><br>
+                    <label for="surname">Surname</label><br>
+                    <input type="text" id="surname" name="surname" placeholder="Surname" required><br><br>
+                    <input type="submit" value="submit">
+                </form>
+                </div>
+            </div>
+
+            <!--Map-->
+            <div class="map-container">
+                <h2 class="maptext">Find us Here:</h2>
+                <iframe 
+                width="100%" 
+                height="600" 
+                frameborder="2px" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=m3%206as+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Elegant Yachting Tours. All rights reserved.</p>
+
+                <ul class = "footer-links"> 
+                    <li><a href = "home.html">Home</a></li>
+                    <li><a href = "tours.html">Tours</a></li>
+                    <li><a href = "Gallery.html"> Gallery</a></li>
+                    <li><a href = "about us.html">About Us</a></li>
+                    <li><a href = "contact us.html">Contact</a></li>
+                </ul>
+
+                <p class = "footer-social">
+                    <a href = "#"><i class="fab fa-facebook-f"></i></a>
+                    <a href = "#"><i class="fab fa-instagram"></i></a>
+                    <a href = "#"><i class="fab fa-twitter"></i></a>
+                </p>
+            </div>        
+        </footer>
+
+    </body>
+</html>
