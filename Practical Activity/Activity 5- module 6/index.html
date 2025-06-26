@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing HTML Iframes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our Location</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Check out our location below!</h2>
+            <p>We are located in the heart of Salford, easily accessible by public transport</p>
+            
+            <div class = "iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2373.832623663031!2d-2.2669032727067426!3d53.489320372331086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1d7e873f1e9%3A0xfe688f827977e7c1!2sBlackburn%20St%2C%20Salford%20M3%206AS!5e0!3m2!1sen!2suk!4v1750933717473!5m2!1sen!2suk"
+                    title="Google Maps Location"
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                    allowfullscreen=""
+                    referrerpolicy="no-referrer-when-downgrade"
+                    sandbox="allow-scripts allow-same-origin allow-popups">
+                    <p>Your browser does not support iframes. Please visit our <a href="location-link">location page</a>.</p>
+                </iframe>
+            </div> 
+            <div class = "iframe-controls">
+                <button onclick="reloadFrame()">Reload Content</button>
+                <button onclick="toggleFullscreen()">Fullscreen</button>
+            </div> 
+            <script>
+                function reloadFrame() {
+                    const frame = document.querySelector('iframe');
+                    frame.src = frame.src;
+                }
+                function toggleFullscreen() {
+                    const frame = document.querySelector('iframe');
+                    if (frame.requestFullscreen) {
+                        frame.requestFullscreen();
+                    }
+                }
+            </script>  
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Our Company</p>
+    </footer>    
+</body>
+</html>
