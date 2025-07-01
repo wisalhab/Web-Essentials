@@ -1,8 +1,48 @@
+/* mobile */
+@media (max-width: 599px) {
+    .branding {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tagline {
+        font-size: 1em;
+        margin-top: 4px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .logo {
+    height: 60px;
+  }
+
+  .tagline {
+    font-size: 1.3em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .logo {
+    height: 70px;
+  }
+
+  .tagline {
+    font-size: 1.5em;
+  }
+}
+
 p {
     font-size: 20px;
     color: #e6e6e6;
     font-family: "Montserrat", sans-serif;
 }
+email {
+    font-size: 20px;
+    color: #e6e6e6;
+    font-family: "Montserrat", sans-serif;
+}
+
 h1{
     font-size: 2.5rem;
     color: #e6e6e6;
@@ -107,21 +147,24 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
 .logo {
   height: 50px;
-  margin-right: 10px;
-  margin-left: -230px;
+  max-width:100%;
+  margin-left: 0;
 }
 
 .tagline {
   font-weight: 600;
   font-size: 1.2em;
   color: #e6e6e6;
+  white-space: nowrap;
 }
 .nav-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
